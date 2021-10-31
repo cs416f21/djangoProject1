@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+    <!-- plug the values corresponding the key names: name and last_name at this particular location
+    these values are carried in context parameter of render in your views.py -->
+    <h1>Hello {{ name }} {{ last_name }}</h1>
+    <h2>States:</h2>
+    <ul>
+        <!-- iterate states variable using a for loop and in each create a li tag and plug the text in it-->
+        {% for i in states %}
+            <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
